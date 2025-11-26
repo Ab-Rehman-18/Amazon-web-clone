@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-image: url('hero_image.jpg'); background-size: cover; background-repeat: no-repeat; background-position: 50% 0px; background-attachment: scroll;">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-left">
+            <img src="amazon_logo.png" class="logo" />
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search Amazon" />
+            <button>🔍</button>
+        </div>
+
+        <div class="nav-right">
+            <p>Hello, Sign in</p>
+            <p class="bold">Accounts & Lists</p>
+        </div>
+
+        <div class="nav-right">
+            <p>Returns</p>
+            <p class="bold">& Orders</p>
+        </div>
+
+        <div class="cart">🛒 Cart</div>
+    </header>
+
+    <!-- NAV BAR -->
+    <nav class="navbar">
+        <a href="#">All</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section class="hero"></section>
+
+    <!-- PRODUCT GRID -->
+    <section class="products">
+        <div class="box">
+            <h2>Clothes</h2>
+            <img src="box1_image.jpg" />
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <h2>Mobile phones</h2>
+            <img src="box4_image.jpg" />
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <h2>Table and chair</h2>
+            <img src="box3_image.jpg" />
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <h2>Make up</h2>
+            <img src="box5_image.jpg" />
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <h2>Toys</h2>
+            <img src="box7_image.jpg" />
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <h2>Animals</h2>
+            <img src="box6_image.jpg" />
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <h2>Kits</h2>
+            <img src="box2_image.jpg" />
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <h2>Women clothes</h2>
+            <img src="box8_image.jpg" />
+            <button>Add to Cart</button>
+    </section>
+
+        <script>
+            (function () {
+                // Parallax-like background movement (downward as you scroll)
+                const speed = 0.5; // 0 = static, 1 = moves same speed as page
+
+                function updateBg() {
+                    const y = window.scrollY || window.pageYOffset;
+                    document.body.style.backgroundPosition = '50% ' + (y * speed) + 'px';
+                }
+
+                window.addEventListener('scroll', updateBg, { passive: true });
+                // initialize position
+                updateBg();
+            })();
+        </script>
+
+    </body>
+    </html>
